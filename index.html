@@ -1,0 +1,54 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Flow-based Fast and High-quality Lip-to-speech Generation</title>
+
+<!-- Meta tags for search engines to crawl -->
+<!-- <meta name="robots" content="index,follow">
+<meta name="description" content="Lip reading aims to recognize text from talking lip, while lip generation aims to synthesize talking lip according to text, which is a key component in talking face generation and is a dual task of lip reading. In this paper, we develop DualLip, a system that jointly improves lip reading and generation by leveraging the task duality and using unlabeled text and lip video data. The key ideas of the DualLip include: 1) Generate lip video from unlabeled text with a lip generation model, and use the pseudo pairs to improve lip reading; 2) Generate text from unlabeled lip video with a lip reading model, and use the pseudo pairs to improve lip generation. We further extend DualLip to talking face generation with two additionally introduced components: lip to face generation and text to speech generation. Experiments on GRID and TCD-TIMIT demonstrate the effectiveness of DualLip on improving lip reading, lip generation, and talking face generation by utilizing unlabeled data. Specifically, the lip generation model in our DualLip system trained with only 10% paired data surpasses the performance of that trained with the whole paired data. And on the GRID benchmark of lip reading, we achieve 1.16% character error rate and 2.71% word error rate, outperforming the state-of-the-art models using the same amount of paired data.">
+<meta name="keywords" content="lip reading;lip generation;task duality;talking face generation;lip to face;text to speech;">
+<link rel="author" href="https://dualip.github.io/"> -->
+
+<!-- Fonts and stuff -->
+<link href="./GlowLTS/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./GlowLTS/project.css" media="screen">
+<link rel="stylesheet" type="text/css" media="screen" href="./GlowLTS/iconize.css">
+<script async="" src="./GlowLTS/prettify.js"></script>
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+      <div class="section head">
+
+      <h1>Flow-based Fast and High-quality Lip-to-speech Generation</h1>
+    </div>
+
+<div class="section abstract">
+  <h2>Abstract</h2>
+  <br>
+  <p>
+    Lip-to-speech aims to generate corresponding speeches conditioned on silent facial videos. This technology can be widely used in a variety of applications such as video conferencing and silent video dubbing. Lip-to-Speech is a more challenging task compared with the well-known text-to-speech (TTS), since lip motions are more ambiguous than texts for generating intelligible speeches due to homophenes. Most existing methods can only generate speeches under constrained conditions with a limited vocabulary and fixed sentence structures. These methods do not perform well in real-world environments. In this paper, we propose a novel parallel flow-based lip-to-speech model, called GlowLTS. GlowLTS uses a flow-based decoder to quickly generate high-quality speeches in real-world unconstrained settings.
+    Since the length of video features and audio features are unequal, we propose a simple video and audio alignment method in order to achieve the parallel generation of speech. This method can ensure the temporal synchronization of video frames and audio frames to the greatest extent. In addition, through experiments, we find that a more accurate condition for the flow-based model will improve the intelligibility of the generated speech, so we propose a condition module through which we can generate rough but intelligible speeches. With these rough speeches as condition, we propose a flow-based decoder to generate higher-quality speeches. Through extensive experiments, we demonstrate that GlowLTS can generate more natural speech than the current state-of-art lip-to-speech model. More significantly, GlowLTS can achieve up to 19.76x speed-up than the current state-of-art model due to the parallelism of the inference process.
+  </p>
+</div>
+
+
+
+<div class="section demo">
+  <h2>Demo Videos</h2>
+  <br>
+  <center>
+    <!-- <video width="1280" height="720" controls>
+      <source src="./DualLip/demo.mp4">
+    </video> -->
+    <iframe width="1280" height="720" src="https://youtu.be/9dpjSpuPEEo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+</div>
+
+<br>
+
+</div>
+
+</body></html>
